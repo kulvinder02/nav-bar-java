@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="shortcut icon" href="./assets/images/dog2-img.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>SaintShiba</title>
 </head>
@@ -12,52 +15,55 @@
     <nav>
        <div class="container">
         <div class="navbar">
-            <div class="logo">
+            <div class="logo z-3">
                 <h1 class="logo1">Saint<span class="orange_logo">Shiba</span>
                 </h1>
             </div>
-            <label id="nav_box">
-                <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_3942_2072)">
-                    <path d="M3 4.5H21V6.5H3V4.5ZM3 11.5H21V13.5H3V11.5ZM3 18.5H21V20.5H3V18.5Z" fill="white"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_3942_2072">
-                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
-                    </clipPath>
-                    </defs>
-                    </svg>
-                    </span>
-            </label>
-            <ul class="links nav_bar_sm_screen">
-                <li><a href="" class="tags_underline">Home</a></li>
-                <li><a href="" class="tags_underline">About</a></li>
-                <li><a href="" class="tags_underline">Tokenomics</a></li>
-                <li><a href="" class="tags_underline">How to buy</a></li>
-                <li><a href="" class="tags_underline">FAQ</a></li>
+            <ul id="navbar" class="links">
+                <li><a href="#Home" class="tags_underline">Home</a></li>
+                <li><a href="#About" class="tags_underline">About</a></li>
+                <li><a href="#Tokenomics" class="tags_underline">Tokenomics</a></li>
+                <li><a href="#How to buy" class="tags_underline">How to buy</a></li>
+                <li><a href="#faq" class="tags_underline">FAQ</a></li>
                 <button type="button" class="nav_bttn">Connect Wallet</button>
-
             </ul>
+            <span onclick="openNav()"  class="d-xl-none d-block z-2 pointer"><svg width="54" height="45" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3942_2072)">
+                <path d="M3 4.5H21V6.5H3V4.5ZM3 11.5H21V13.5H3V11.5ZM3 18.5H21V20.5H3V18.5Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_3942_2072">
+                <rect width="34" height="34" fill="white" transform="translate(0 0.5)"/>
+                </clipPath>
+                </defs>
+                </svg>
+                </span>
         </div>
     </div>
     </nav>
     <!-- page1 -->
-    <div class="page1">
+    <div class="page1" id="Home">
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <h1 class="hro_heading">Accumsan ut orci vitae</h1>
-                    <p class="hro_subheading">Velit eget sit nibh fringilla risus ullamcorper malesuada. Morbi nulla suscipit dolor, volutpat quam at urna donec rutrum. In vulputate congue arcu in et.</p>
-                <button type="button" class="hro_bttn mt-67">Connect Wallet</button>
+                <div class="col-12 col-sm-12 col-xl-6 col12_xsm_screen">
+                    <div data-aos="zoom-in-right">
+                        <h1 class="hro_heading">Accumsan ut orci vitae</h1>
+                        <p class="hro_subheading">Velit eget sit nibh fringilla risus ullamcorper malesuada. Morbi nulla suscipit dolor, volutpat quam at urna donec rutrum. In vulputate congue arcu in et.</p>
+                    <button type="button" class="hro_bttn mt-67">Connect Wallet</button>
+                    </div>
+                   
                 </div>
-                <div class="col-6">
-                    <img src="./assets/images/dog-img.png" alt="#">
+                <div class="col-12 pic_end col-sm-12 col-xl-6 col12_xsm_screen pic_center">
+                    <div data-aos="zoom-out">
+                        <img src="./assets/images/dog-img.png" alt="#" class="dog_img wh_100 sm_screen_pic">
+                    </div>
+                  
                 </div>
             </div>
         </div>
     </div>
     <!-- page2 -->
-    <div class="page_2">
+    <div class="page_2" id="About" >
         <div class="container">
             <div class="row">
                 <div class="transprnt_box">
@@ -66,19 +72,355 @@
                         <p class="box_subheading">Urna, dictum volutpat augue tortor. Fermentum vulputate convallis viverra facilisis. Aliquam porttitor sem rhoncus rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed. Cursus donec porttitor fames tellus. At ut donec nec aliquet ipsum leo tellus amet lacus. Varius mi urna blandit id magna tellus imperdiet tortor. Volutpat nec vulputate diam tristique facilisi in turpis vel elit.</p>
                     </h1>
                 </div>
-                <div class="col-6">
-                    <h1 class="page2_heading">Cursus ligula habitant sed integer.</h1>
-                    <p  class="page2_subheading">Urna, dictum volutpat augue tortor. Fermentum vulputate convallis viverra facilisis. Aliquam porttitor sem rhoncus rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed. Cursus donec porttitor fames tellus.</p>
-                <button type="button" class="page2_bttn">Learn more</button>
+                <div class="col-12 col-sm-12 col-xl-6">
+                    <div data-aos="zoom-out-right">
+                        <h1 class="page2_heading">Cursus ligula habitant sed integer.</h1>
+                        <p  class="page2_subheading">Urna, dictum volutpat augue tortor. Fermentum vulputate convallis viverra facilisis. Aliquam porttitor sem rhoncus rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed. Cursus donec porttitor fames tellus.</p>
+                    <button type="button" class="page2_bttn">Learn more</button>
+                    </div> 
                 </div>
-                <div class="col-6">
-                    <img src="./assets/images/dog-img.png" alt="">
+                <div class="col-12 col-sm-12 col-xl-6 pic_center">
+                    <div data-aos="zoom-out-left">
+                        <img src="./assets/images/dog-img.png" alt="" class=" sm_screen_pic2">
+                    </div>
+                   
                 </div>
             </div>
         </div>
     </div>
+    <!-- page3 -->
+    <div class="page3"  id="Tokenomics">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-xl-6">
+                    <div data-aos="zoom-out-right">  <h1 class="page3_heading">How to Buy</h1>
+                        <p class="page3_subheading">Urna, dictum volutpat augue tortor. Fermentum vulputate convallis viverra facilisis. Aliquam porttitor sem rhoncus rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed. Cursus donec porttitor fames tellus.</p>
+                       <div class="hover_box d-flex align-items-center">
+                        <span class="ml_10"><svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="35.5" cy="35.5" r="35.5" fill="white"/>
+                            <path d="M31.8066 29.8V26.962H37.1086V43H33.9406V29.8H31.8066Z" fill="black"/>
+                            </svg>
+                            </span>
+                            <div>
+                                <h1 class="span_box_head">Cras nunc libero ac</h1>
+                                <p class="span_box_subhead">Amet, integer et ultrices non viverra dolor dui</p>
+                            </div>
+                       </div>
+                       <div class="hover_box d-flex align-items-center">
+                        <span class="ml_10"><svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="35.5" cy="35.5" r="35.5" fill="white"/>
+                            <path d="M31.3176 39.524C32.7256 38.3507 33.8476 37.3753 34.6836 36.598C35.5196 35.806 36.2163 34.9847 36.7736 34.134C37.3309 33.2833 37.6096 32.4473 37.6096 31.626C37.6096 30.878 37.4336 30.2913 37.0816 29.866C36.7296 29.4407 36.1869 29.228 35.4536 29.228C34.7203 29.228 34.1556 29.4773 33.7596 29.976C33.3636 30.46 33.1583 31.1273 33.1436 31.978H30.1516C30.2103 30.218 30.7309 28.8833 31.7136 27.974C32.7109 27.0647 33.9723 26.61 35.4976 26.61C37.1696 26.61 38.4529 27.0573 39.3476 27.952C40.2423 28.832 40.6896 29.998 40.6896 31.45C40.6896 32.594 40.3816 33.6867 39.7656 34.728C39.1496 35.7693 38.4456 36.6787 37.6536 37.456C36.8616 38.2187 35.8276 39.1427 34.5516 40.228H41.0416V42.78H30.1736V40.492L31.3176 39.524Z" fill="#0C0B0B"/>
+                            </svg>
+                            
+                            </span>
+                            <div>
+                                <h1 class="span_box_head">Cras nunc libero ac</h1>
+                                <p class="span_box_subhead">Amet, integer et ultrices non viverra dolor dui</p>
+                            </div>
+                       </div>
+                       <div class="hover_box d-flex align-items-center">
+                        <span class="ml_10"><svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="35.5" cy="35.5" r="35.5" fill="white"/>
+                            <path d="M30.625 31.186C30.6984 29.7193 31.2117 28.59 32.165 27.798C33.133 26.9913 34.4017 26.588 35.971 26.588C37.0417 26.588 37.9584 26.7787 38.721 27.16C39.4837 27.5267 40.0557 28.0327 40.437 28.678C40.833 29.3087 41.031 30.0273 41.031 30.834C41.031 31.758 40.789 32.5427 40.305 33.188C39.8357 33.8187 39.271 34.244 38.611 34.464V34.552C39.4617 34.816 40.1217 35.2853 40.591 35.96C41.075 36.6347 41.317 37.5 41.317 38.556C41.317 39.436 41.1117 40.2207 40.701 40.91C40.305 41.5993 39.711 42.142 38.919 42.538C38.1417 42.9193 37.203 43.11 36.103 43.11C34.4457 43.11 33.0964 42.692 32.055 41.856C31.0137 41.02 30.4637 39.788 30.405 38.16H33.397C33.4264 38.8787 33.6684 39.458 34.123 39.898C34.5924 40.3233 35.2304 40.536 36.037 40.536C36.785 40.536 37.357 40.3307 37.753 39.92C38.1637 39.4947 38.369 38.952 38.369 38.292C38.369 37.412 38.0904 36.7813 37.533 36.4C36.9757 36.0187 36.1104 35.828 34.937 35.828H34.299V33.298H34.937C37.0197 33.298 38.061 32.6013 38.061 31.208C38.061 30.5773 37.8704 30.086 37.489 29.734C37.1224 29.382 36.587 29.206 35.883 29.206C35.1937 29.206 34.6584 29.3967 34.277 29.778C33.9104 30.1447 33.6977 30.614 33.639 31.186H30.625Z" fill="#0C0B0B"/>
+                            </svg>
+                            
+                            </span>
+                            <div>
+                                <h1 class="span_box_head">Cras nunc libero ac</h1>
+                                <p class="span_box_subhead">Amet, integer et ultrices non viverra dolor dui</p>
+                            </div>
+                       </div></div>
+                </div>
+                <div class="col-12 pic_end  col-sm-12 col-xl-6">
+                    <div data-aos="zoom-out-left">
+                        <img src="./assets/images/page_3_img.png" alt="" class="wh_100 page3_pic ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page4 -->
+    <div class="page4" id="How to buy">
+        <div class="container">
+            <div class="row">
+                <h1 class="page4_heading">Tokenomics</h1>
+                <div class="col-12 col-sm-6 col-xl-4">
+                    <div data-aos="zoom-out-right">
+                        <div class="small_box">
+                            <div class="row">
+                              <div class="col-6">
+                                  <h1 class="small_box_heading">Liquidity</h1>
+                                  <p  class="small_box_subheading">When Buying</p>
+                                  <h1 class="orange_numbr">3-5%</h1>
+                              </div>
+                              <div class="col-6">
+                                  <h1 class="small_box_subheading mt_30">When Selling</h1>
+                                  <p class="white_nmbr">3-5%</p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4">
+                    <div class="small_box">
+                      <div class="row">
+                        <div class="col-6">
+                            <h1 class="small_box_heading">Marketing</h1>
+                            <p  class="small_box_subheading">When Buying</p>
+                            <h1 class="orange_numbr">3-5%</h1>
+                        </div>
+                        <div class="col-6">
+                            <h1 class="small_box_subheading mt_30">When Selling</h1>
+                            <p class="white_nmbr">3-5%</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4">
+                    <div data-aos="zoom-out-left"><div class="small_box mb-30">
+                        <div class="row">
+                          <div class="col-6">
+                              <h1 class="small_box_heading">Rewards</h1>
+                              <p  class="small_box_subheading">When Buying</p>
+                              <h1 class="orange_numbr">3-5%</h1>
+                          </div>
+                          <div class="col-6 mb-sm-screen">
+                              <h1 class="small_box_subheading mt_30">When Selling</h1>
+                              <p class="white_nmbr">3-5%</p>
+                          </div>
+                        </div>
+                      </div></div>
+                </div>
+                <div data-aos="zoom-in-down">
+                     <div class="chart_box">
+                <div class="row">
+                    <div class="col-12 col-sm-7 col-xl-4 pic_center">
+                        <img src="./assets/images/circle-img.png" alt="" class="mt-89 w-100 mt-120">
+                    </div>
+                    <div class="col-12 col-sm-5 col-xl-3 pic_center align-items-center flex-column">
+                    <div class="mt-sm-screen  gap-3">
+                        <div class="d-flex mb-2">
+                            <div class="color_box clr1"></div>
+                            <h1 class="clr_boxhead">Sed sem</h1>
+                        </div>
+                        <div class="d-flex  mb-2">
+                            <div class="color_box clr2"></div>
+                            <h1 class="clr_boxhead">Sed sem</h1>
+                        </div>
+                        <div class="d-flex  mb-2">
+                            <div class="color_box clr3"></div>
+                            <h1 class="clr_boxhead">Sed sem</h1>
+                        </div>
+                        <div class="d-flex  mb-2">
+                            <div class="color_box clr4"></div>
+                            <h1 class="clr_boxhead">Sed sem</h1>
+                        </div>
+                        <div class="d-flex  mb-2">
+                            <div class="color_box clr5"></div>
+                            <h1 class="clr_boxhead">Sed sem</h1>
+                        </div>
+                        <div class="d-flex  mb-2">
+                            <div class="color_box clr6"></div>
+                            <h1 class="clr_boxhead">Sed sem</h1>
+                        </div>
+                    </div>
+                    
+
+                    </div>
+                    <div class="col-12 pic_end col-sm-12 col-xl-5 pic_center">
+                        <img src="./assets/images/dog2-img.png" alt="" class="mt-89  sm_screen_pic3">
+                    </div>
+                </div>
+             <div class="table_box">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Token</th>
+                        <th scope="col">Percentage</th>
+                        <th scope="col">Token Price</th>
+                        <th scope="col">Token Price</th>
+                        <th scope="col">Total Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Seddigq</td>
+                        <td>1,00,000</td>
+                        <td>@12%</td>
+                        <td>58.3</td>
+                        <td>12%</td>
+                        <td>10% Monthly</td>
+                      </tr>
+                      <tr>
+                        <td>Seddigq</td>
+                        <td>1,00,000</td>
+                        <td>@12%</td>
+                        <td>58.3</td>
+                        <td>12%</td>
+                        <td>10% Monthly</td>
+                      </tr>
+                      <tr>
+                        <td>Seddigq</td>
+                        <td>1,00,000</td>
+                        <td>@12%</td>
+                        <td>58.3</td>
+                        <td>12%</td>
+                        <td>10% Monthly</td>
+                      </tr>
+                      <tr>
+                        <td>Seddigq</td>
+                        <td>1,00,000</td>
+                        <td>@12%</td>
+                        <td>58.3</td>
+                        <td>12%</td>
+                        <td>10% Monthly</td>
+                      </tr>
+                      <tr>
+                        <td>Seddigq</td>
+                        <td>1,00,000</td>
+                        <td>@12%</td>
+                        <td>58.3</td>
+                        <td>12%</td>
+                        <td>10% Monthly</td>
+                      </tr>
+                      <tr>
+                        <td>Seddigq</td>
+                        <td>1,00,000</td>
+                        <td>@12%</td>
+                        <td>58.3</td>
+                        <td>12%</td>
+                        <td>10% Monthly</td>
+                      </tr>
+                    </tbody>
+                  </table>
+             </div>
+             </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <div class="page5">
+        <div class="container">
+            <h1 class="radmp_heading">Roadmap</h1>
+            <div class="timeline">
+                <div class="timelineContainer ">
+                    <div class="content">
+                        <h2 class="font_size">Phase-1</h2>
+                        <p class=" timle_para">Massa pellentesque sagittis
+                            Aliquam sed in odio.
+                            Turpis blandit at interdum
+                            Eget tempus nulla tempus arcu.</p>
+                    </div>
+                </div>
+                <div class="timelineContainer right_timline rgt_container">
+                    <div class="content contant_rgt">
+                        <h2 class="font_size">Phase-2</h2>
+                        <p class=" timle_para para_rgt">Massa pellentesque sagittis
+                            Aliquam sed in odio.
+                            Turpis blandit at interdum
+                            Eget tempus nulla tempus arcu.</p>
+                    </div>
+                </div>
+
+                <div class="timelineContainer left">
+                    <div class="content">
+                        <h2 class=" font_size">Phase-3</h2>
+                        <p class=" timle_para">Massa pellentesque sagittis
+                            Aliquam sed in odio.
+                            Turpis blandit at interdum
+                            Eget tempus nulla tempus arcu.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timelineContainer right_timline rgt_container">
+                <div class="content contant_rgt">
+                    <h2 class="font_size">Phase-4</h2>
+                    <p class=" timle_para para_rgt">Massa pellentesque sagittis
+                        Aliquam sed in odio.
+                        Turpis blandit at interdum
+                        Eget tempus nulla tempus arcu.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="page6" id="faq">
+        <div class="container">
+            <div class="mt_page6">
+            <h1 class="page6_head">FAQ</h1>
+         
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Volutpat consequat dictumst vel donec.
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus. Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Volutpat consequat dictumst vel donec.
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus. Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Volutpat consequat dictumst vel donec.
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus. Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingfour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Volutpat consequat dictumst vel donec.
+                      </button>
+                    </h2>
+                    <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus. Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingfive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Volutpat consequat dictumst vel donec.
+                      </button>
+                    </h2>
+                    <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus. Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.</div>
+                    </div>
+                  </div>
+              </div>
+         </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        const NavBar = document.getElementById("navbar")
+        function openNav() {
+            NavBar.classList.toggle("shownav")
+            document.body.classList.toggle("overflow-hidden")
+        }
+
+        AOS.init({
+  duration: 1200,
+})
+r
+    </script>
 </body>
 </body>
 </html>

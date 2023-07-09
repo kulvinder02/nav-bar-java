@@ -1,0 +1,29 @@
+:root {
+    --ff-primary: "Poppins", sans-serif;
+
+    --fs-xs: 24px;
+    --fs-sm: 46px;
+    --fs-md: 65px;
+    --fs-lg: 80px;
+    --fs-xl: 96px;;
+
+
+    --primary-color: white;
+    --secondary-color: #474749;
+}
+
+.fs_24{
+    font-size: var(--fs-xs) !important;
+  }
+  .fs_46{
+    font-size: var(--fs-sm) !important;
+  }
+  .fs_65{
+    font-size: var(--fs-md) !important;
+  }
+  .fs_80{
+    font-size: var(--fs-lg) !important;
+  }
+  .fs_96{
+    font-size: var(--fs-xl) !important;
+  }
