@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/root.css">
     <link rel="shortcut icon" href="./assets/images/dog2-img.png" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>SaintShiba</title>
 </head>
@@ -14,17 +14,17 @@
   <!-- navbar -->
     <nav>
        <div class="container">
-        <div class="navbar">
+        <div class="navbar1">
             <div class="logo z-3">
                 <h1 class="logo1">Saint<span class="orange_logo">Shiba</span>
                 </h1>
             </div>
             <ul id="navbar" class="links">
-                <li><a href="#Home" class="tags_underline">Home</a></li>
-                <li><a href="#About" class="tags_underline">About</a></li>
-                <li><a href="#Tokenomics" class="tags_underline">Tokenomics</a></li>
-                <li><a href="#How to buy" class="tags_underline">How to buy</a></li>
-                <li><a href="#faq" class="tags_underline">FAQ</a></li>
+                <li class="mt-2"><a href="#Home" class="tags_underline">Home</a></li>
+                <li class="mt-2"><a href="#About" class="tags_underline">About</a></li>
+                <li class="mt-2"><a href="#Tokenomics" class="tags_underline">Tokenomics</a></li>
+                <li class="mt-2"><a href="#How to buy" class="tags_underline">How to buy</a></li>
+                <li class="mt-2"><a href="#faq" class="tags_underline">FAQ</a></li>
                 <button type="button" class="nav_bttn">Connect Wallet</button>
             </ul>
             <span onclick="openNav()"  class="d-xl-none d-block z-2 pointer"><svg width="54" height="45" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,10 +89,10 @@
         </div>
     </div>
     <!-- page3 -->
-    <div class="page3"  id="Tokenomics">
-        <div class="container">
+    <div class="page3 position-relative"  id="Tokenomics">
+        <div class="container ">
             <div class="row">
-                <div class="col-12 col-sm-12 col-xl-6">
+                <div class="col-12  col12_sm_screen col-xl-6">
                     <div data-aos="zoom-out-right">  <h1 class="page3_heading">How to Buy</h1>
                         <p class="page3_subheading">Urna, dictum volutpat augue tortor. Fermentum vulputate convallis viverra facilisis. Aliquam porttitor sem rhoncus rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed. Cursus donec porttitor fames tellus.</p>
                        <div class="hover_box d-flex align-items-center">
@@ -118,7 +118,7 @@
                                 <p class="span_box_subhead">Amet, integer et ultrices non viverra dolor dui</p>
                             </div>
                        </div>
-                       <div class="hover_box d-flex align-items-center">
+                       <div class="hover_box d-flex align-items-center mb_pic">
                         <span class="ml_10"><svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="35.5" cy="35.5" r="35.5" fill="white"/>
                             <path d="M30.625 31.186C30.6984 29.7193 31.2117 28.59 32.165 27.798C33.133 26.9913 34.4017 26.588 35.971 26.588C37.0417 26.588 37.9584 26.7787 38.721 27.16C39.4837 27.5267 40.0557 28.0327 40.437 28.678C40.833 29.3087 41.031 30.0273 41.031 30.834C41.031 31.758 40.789 32.5427 40.305 33.188C39.8357 33.8187 39.271 34.244 38.611 34.464V34.552C39.4617 34.816 40.1217 35.2853 40.591 35.96C41.075 36.6347 41.317 37.5 41.317 38.556C41.317 39.436 41.1117 40.2207 40.701 40.91C40.305 41.5993 39.711 42.142 38.919 42.538C38.1417 42.9193 37.203 43.11 36.103 43.11C34.4457 43.11 33.0964 42.692 32.055 41.856C31.0137 41.02 30.4637 39.788 30.405 38.16H33.397C33.4264 38.8787 33.6684 39.458 34.123 39.898C34.5924 40.3233 35.2304 40.536 36.037 40.536C36.785 40.536 37.357 40.3307 37.753 39.92C38.1637 39.4947 38.369 38.952 38.369 38.292C38.369 37.412 38.0904 36.7813 37.533 36.4C36.9757 36.0187 36.1104 35.828 34.937 35.828H34.299V33.298H34.937C37.0197 33.298 38.061 32.6013 38.061 31.208C38.061 30.5773 37.8704 30.086 37.489 29.734C37.1224 29.382 36.587 29.206 35.883 29.206C35.1937 29.206 34.6584 29.3967 34.277 29.778C33.9104 30.1447 33.6977 30.614 33.639 31.186H30.625Z" fill="#0C0B0B"/>
@@ -131,14 +131,14 @@
                             </div>
                        </div></div>
                 </div>
-                <div class="col-12 pic_end  col-sm-12 col-xl-6">
-                    <div data-aos="zoom-out-left">
-                        <img src="./assets/images/page_3_img.png" alt="" class="wh_100 page3_pic ">
+                <div class="col-12 col12_sm_screen">
+                
+                        <img src="./assets/images/page_3_img.png" alt="" class="page3_side_pic pic_possition w-100">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
     <!-- page4 -->
     <div class="page4" id="How to buy">
         <div class="container">
@@ -348,9 +348,9 @@
     </div>
     <div class="page6" id="faq">
         <div class="container">
-            <div class="mt_page6">
-            <h1 class="page6_head">FAQ</h1>
-         
+
+            <div class="mt_page6 ">
+            <h1 class="page6_head overflow-hidden">FAQ</h1>
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingOne">
@@ -403,10 +403,11 @@
                     </div>
                   </div>
               </div>
+            
          </div>
         </div>
+        <img src="./assets/images/bg-circle-img.png" alt=""  class="bg_img_pqge6">
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
