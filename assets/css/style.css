@@ -7,11 +7,13 @@
     text-decoration: none !important;
     list-style-type: none;
     box-sizing: border-box;
-   /* border: 1px solid red; */
+    /* border: 1px solid red; */
 }
-body{
-    overflow-x: hidden;
+
+body {
+    overflow-x: hidden !important;
 }
+
 .container {
     max-width: 1320px !important;
     padding-left: 12px;
@@ -29,8 +31,9 @@ body{
     line-height: normal;
 }
 
-nav {
-    background-color: black;
+nav{
+    background: rgba(1, 1, 1, 0.75) !important;
+    backdrop-filter: blur(8px);
     min-height: 100px;
     position: sticky;
     top: 0%;
@@ -247,7 +250,7 @@ nav {
 }
 
 /* page1 */
-.page1 {
+.bg-img{
     background-image: url(../images/page1_bg-im.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -408,9 +411,12 @@ nav {
 .hover_box {
     width: 100% !important;
     border-radius: 46px;
-    background: #0C0B0B;
+    background:#151313;
     cursor: pointer;
     margin-bottom: 16px;
+}
+.hover_box:hover{
+    background: #000;
 }
 
 .span_box_head {
@@ -524,7 +530,7 @@ nav {
 }
 
 table {
-
+    border: unset !important;
     text-align: center;
     margin-top: 50px;
 
@@ -543,19 +549,19 @@ table {
     max-width: 100%;
     overflow: hidden;
     border-radius: 10px;
-    background: linear-gradient(136deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 100%);
+    background: linear-gradient(136deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%);
     backdrop-filter: blur(16px);
     border: 1px solid rgb(83, 82, 82);
     margin-bottom: 50px !important;
 }
 
-.table>:not(caption)>*>* {
+/* .table>:not(caption)>*>* {
     padding: 0.5rem 0.5rem;
     color: #ffffff91 !important;
-    background-color: #56545400 !important;
+    background-color:gray !important;
     border-bottom-width: var(--bs-border-width);
     box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
-}
+} */
 
 tbody,
 td,
@@ -567,7 +573,34 @@ tr {
     border-style: none !important;
     border-width: 0;
 }
-
+.table {
+    --bs-table-color-type: initial;
+    --bs-table-bg-type: initial;
+    --bs-table-color-state: initial;
+    --bs-table-bg-state: initial;
+    --bs-table-color: white !important;
+    --bs-table-bg:unset !important;
+    --bs-table-border-color: var(--bs-border-color);
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: var(--bs-body-color);
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: var(--bs-body-color);
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: var(--bs-body-color);
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    vertical-align: top;
+    border-color: var(--bs-table-border-color);
+}
+table thead tr th {
+    color: white !important;
+    background: #0C0B0B  !important;
+    /* border: 1px solid white !important; */
+}
+table thead tr tbody {
+    background-color:#161515 !important;
+}
 .page6_head {
     padding-bottom: 50px;
     color: #FFF;
@@ -712,6 +745,7 @@ th {
 
 
 .font_size {
+    margin-top: -25px !important;
     color: var(--white, #FFF) !important;
     font-family: Poppins;
     font-size: 36px;
@@ -870,11 +904,9 @@ th {
         margin-bottom: 50px;
     }
 
-    .sm_screen_pic,
-    .sm_screen_pic2,
-    .sm_screen_pic3 {
-        height: 554px !important;
-        width: 360px !important;
+    .sm_screen_pic, .sm_screen_pic2, .sm_screen_pic3 {
+        height: 370px !important;
+        width: 267px !important;
     }
 
     .pic_end {
@@ -1379,6 +1411,15 @@ th {
 }
 
 @media (min-width:1200px) {
+    .siz_circle{
+        margin-left: 60px;
+        /* min-height:50vh;
+        max-width: 400px; */
+    }
+    .mt_box{
+        margin-top: 90px !important;
+    margin-left: 30px;
+    }
     .links {
         display: flex;
         margin-top: 20px;
@@ -1500,8 +1541,13 @@ th {
     }
 
     .mt-120 {
-        margin-top: 47px;
+        margin-top: 70px;
+        
     }
+    .mt-89 {
+        margin-top: 57px;
+    }
+
 
     .mt-150 {
         margin-top: 160px;
@@ -1533,9 +1579,9 @@ th {
 }
 
 @media (max-width:1400px) {
-   .bg_img_pqge6{
-    display: none;
-   }
+    .bg_img_pqge6 {
+        display: none;
+    }
 
     .col12_sm_screen {
         width: 100% !important;
@@ -1559,8 +1605,8 @@ th {
         position: fixed;
         top: 0;
         left: -100%;
-        background-color: black;
-        height: 100%;
+        background-color: black !important;
+        height: 100vh;
         width: 100%;
         align-items: center;
         justify-content: center;
