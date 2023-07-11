@@ -13,6 +13,9 @@
 body {
     overflow-x: hidden !important;
 }
+head {
+    overflow-x: hidden !important;
+}
 
 .container {
     max-width: 1320px !important;
